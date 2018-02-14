@@ -1,0 +1,203 @@
+body.homeslam {
+  overflow: hidden;
+  animation: rattle 0.2s;
+  animation-delay: 1s;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+}
+
+p {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+nav ul, nav li {
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+nav {
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  background-color: rgba(153, 154, 155, 0.5);
+  text-align: center;
+}
+nav a:link, nav a:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+nav a.current {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.header{
+  animation: slam 1s;
+  animation-timing-function: ease-in;
+  position: relative;
+  font-size: 10em;
+}
+@keyframes slam{
+  0% {
+    transform: scale(10, 10);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes rattle {
+  0% { margin-top: 0; margin-left: 0; }
+  10% { margin-top: -5px; margin-left: 0; }
+  20% { margin-top: 0; margin-left: -5px; }
+  30% { margin-top: 5px; margin-left: 0; }
+  40% { margin-top: 0; margin-left: 5px; }
+  50% { margin-top: -2px; margin-left: 0; }
+  60% { margin-top: 0; margin-left: -2px; }
+  70% { margin-top: 2px; margin-left: 0; }
+  80% { margin-top: 0; margin-left: 2px; }
+  90% { margin-top: -1px; margin-left: 0; }
+  100% { margin-top: 0; margin-left: 0; }
+}
+
+div {
+  margin-left:25%;
+  margin-right: 25%;
+}
+
+/*SCHOOLED POEM*/
+#poem {
+  position: relative;
+  font-size: 20px;
+  overflow: hidden;
+  animation-name: fadein;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  width: 675px;
+  text-align: center;
+}
+#school2 {
+  animation-name: fadein;
+  animation-delay: 7s;
+}
+#school3 {
+  animation-name: fadein;
+  animation-delay: 9s;
+}
+#school4 {
+  animation-delay: fadein;
+  animation-delay: 11s;
+}
+@keyframes fadein {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 100%;
+ }
+}
+.backwards:hover {
+  transform: rotateY(180deg);
+  transition-duration: 2s;
+  direction: rtl;
+}
+/*.poem {
+  height: 500px;
+  width: 600px;
+  transition: all 3s;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+.school1 {
+  transition-property: all;
+  transition-duration: 3s,;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2;
+  position: absolute;
+  left: -600px;
+}
+.school2 {
+  transition-property: all;
+  transition-duration: 3s,;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2;
+  position: absolute;
+  top: 30px;
+  left: -600px;
+}
+.school3 {
+  transition-property: all;
+  transition-duration: 3s,;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2;
+  position: absolute;
+  top: 60px;
+  left: -600px;
+}
+.backwards {
+  transition-property: all;
+  transition-duration: 3s,;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2;
+  position: absolute;
+  top: 90px;
+  right: -300px;
+}
+
+.poem:hover .school1 {
+  left: 100px;
+}
+.poem:hover .school2 {
+  top: 30px;
+  left: 100px;
+}
+.poem:hover .school3 {
+  top: 60px;
+  left: 100px;
+}
+.poem:hover .backwards {
+  right: 100px;
+  top: 100px;
+}*/
+
+/*SWEATER*/
+#heart, #heart2 {
+  transform:scale(1, 1);
+  text-align: center;
+  animation-name: heartbeat;
+  animation-duration: 0.7s;
+  animation-iteration-count: 3;
+}
+#heart2 {
+  animation-delay: 4s;
+}
+
+@keyframes heartbeat {
+  0 {color: black;
+     font-size:15px;}
+  100% {transform: scale(3, 3);
+        color: red;
+        font-size:20px;}
+  0 {color: red;
+     font-size: 15px;}
+  100% {color: red;
+        font-size:20px;}
+}
